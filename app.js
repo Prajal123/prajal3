@@ -334,7 +334,7 @@ function fall() {
             ctx.fillText("You lost", canvas.width / 2, canvas.height / 2);
             clearTimeout(t);
         }
-        if (alienarray.length == 0 || count > 10) {
+        if (alienarray.length == 0 || count > 80) {
             cancelAnimationFrame(animation);
             cancelAnimationFrame(animation3);
             highscore1();
@@ -440,7 +440,7 @@ function levelup() {
                     ctx.fillText("You lost", canvas.width / 2, canvas.height / 2);
                     clearTimeout(s);
                 }
-                if (alienarray.length == 0 || count > 20) {
+                if (alienarray.length == 0 || count > 150) {
                     cancelAnimationFrame(animation4);
                     cancelAnimationFrame(animation5);
                     highscore1();
@@ -537,7 +537,7 @@ function levelup2() {
                     ctx.fillText("You lost", canvas.width / 2, canvas.height / 2);
                     clearTimeout(r);
                 }
-                if (alienarray.length == 0 || count > 30) {
+                if (alienarray.length == 0 || count > 200) {
                     cancelAnimationFrame(animation6);
                     cancelAnimationFrame(animation7);
                     highscore1();
